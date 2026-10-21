@@ -1,0 +1,11 @@
+{
+  "type": "transformers",
+  "id": "replace-with-local-model-id-v1",
+  "model_path": "/absolute/path/to/model",
+  "device": "cuda:0",
+  "torch_dtype": "bfloat16",
+  "max_input_length": 2048,
+  "local_files_only": true,
+  "trust_remote_code": false
+}
+

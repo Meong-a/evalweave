@@ -1,0 +1,10 @@
+{
+  "type": "mock",
+  "id": "mock-candidate-v1",
+  "answers": {
+    "public_demo_001": "B",
+    "public_demo_002": "A",
+    "public_demo_003": "C",
+    "public_demo_004": "D"
+  }
+}

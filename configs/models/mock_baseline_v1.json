@@ -1,0 +1,10 @@
+{
+  "type": "mock",
+  "id": "mock-baseline-v1",
+  "answers": {
+    "public_demo_001": "B",
+    "public_demo_002": "B",
+    "public_demo_003": "C",
+    "public_demo_004": "A"
+  }
+}

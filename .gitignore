@@ -13,10 +13,9 @@ runs/
 comparisons/
 leaderboards/
 suite_reports/
-models/
-checkpoints/
+/models/
+/checkpoints/
 *.safetensors
 *.bin
 *.pt
 *.pth
-
