@@ -9,7 +9,8 @@ from pathlib import Path
 from typing import Any
 
 from group_llm_benchmark.reporting import render_comparison_html
-from group_llm_benchmark.utils.io import read_jsonl, safe_name, utc_now, write_csv, write_json
+from group_llm_benchmark.utils.io import safe_name, utc_now, write_csv, write_json
+from group_llm_benchmark.utils.jsonl_v1_2 import read_jsonl
 
 
 def _mean(values: list[float]) -> float:

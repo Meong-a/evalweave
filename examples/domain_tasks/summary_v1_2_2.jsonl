@@ -1,0 +1,2 @@
+{"id":"summary_demo_001","input":"某医院上线预约系统后，患者平均排队时间从四十分钟降到十五分钟，线上预约占比达到百分之七十。","reference":"医院预约系统显著缩短排队时间，线上预约占比达到七成。","source":"example/summary"}
+{"id":"summary_demo_002","input":"研究团队发布了一套开放评测工具，可统一记录模型逐题输出、汇总指标和运行配置。","reference":"研究团队发布了可统一保存评测结果与配置的开放工具。","source":"example/summary"}

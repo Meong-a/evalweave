@@ -1,0 +1,12 @@
+{
+  "suite_version": "1.2.2",
+  "sources": {
+    "mmlu": "https://people.eecs.berkeley.edu/~hendrycks/data.tar",
+    "ceval": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/main/ceval-exam.zip",
+    "bbh": "https://github.com/suzgunmirac/BIG-Bench-Hard/archive/refs/heads/main.zip",
+    "gsm8k": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/test.jsonl",
+    "truthfulqa": "https://raw.githubusercontent.com/sylinrl/TruthfulQA/main/TruthfulQA.csv",
+    "ifeval": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/data/input_data.jsonl",
+    "humaneval": "https://raw.githubusercontent.com/openai/human-eval/master/data/HumanEval.jsonl.gz"
+  }
+}

@@ -1,21 +1,30 @@
-__pycache__/
-*.py[cod]
-*.egg-info/
-.pytest_cache/
-.coverage
-.venv/
-venv/
-.env
-.env.*
-dist/
-build/
+# Generated full datasets and downloaded source archives are not committed.
+data/raw_v1_2/
+data/full_v1_2/
+configs/generated*/
+configs/tasks_v1_2/
+configs/models/qwen_local_base_v1.json
+configs/models/qwen_local_lora_example_v1.json
+configs/experiments/qwen_*
+configs/tasks/xmedbench_*
+manifests/*
+!manifests/public_data_hashes_v1_2_2.json
+!manifests/source_urls_v1_2_2.json
+reports/*
+README_v1.md
+README_v1_2.md
+README_v1_2_1.md
+
+# Project-local evaluator dependencies and third-party checkout.
+.deps_ifeval_v1_2/
+.nltk_data_ifeval_v1_2/
+third_party/human-eval/
+
+# Runtime outputs.
 runs/
 comparisons/
 leaderboards/
 suite_reports/
-/models/
-/checkpoints/
-*.safetensors
-*.bin
-*.pt
-*.pth
+.pytest_cache/
+__pycache__/
+*.py[cod]

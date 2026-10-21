@@ -1,0 +1,2 @@
+{"id":"keyword_demo_001","input":"请说明高血压管理的两个重要方面。","reference_keywords":["饮食","运动"],"source":"example/custom_keyword"}
+{"id":"keyword_demo_002","input":"请说明可复现实验至少应保存哪些信息。","reference_keywords":["配置","数据"],"source":"example/custom_keyword"}

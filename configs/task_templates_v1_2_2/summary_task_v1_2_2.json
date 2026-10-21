@@ -1,0 +1,11 @@
+{
+  "type": "text_generation",
+  "name": "my_summary_task_v1",
+  "dataset_path": "../../examples/domain_tasks/summary_v1_2_2.jsonl",
+  "input_field": "input",
+  "reference_field": "reference",
+  "capabilities": ["text_summarization"],
+  "metrics": ["rouge_l", "token_f1"],
+  "primary_metric": "rouge_l",
+  "prompt_template": "请用一句话概括下面的内容：\n{text}\n摘要："
+}

@@ -7,7 +7,7 @@ from group_llm_benchmark.schemas import GenerationRequest, Sample
 from group_llm_benchmark.scorers import score_text
 
 from .base import TaskPlugin
-from .common import load_records
+from .common_v1_2 import load_records
 
 
 class TextGenerationTask(TaskPlugin):

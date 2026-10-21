@@ -1,0 +1,2 @@
+{"id":"medical_demo_001","question":"成人正常静息心率通常属于哪个范围？","choices":{"A":"20–40 次/分","B":"60–100 次/分","C":"120–160 次/分","D":"180–220 次/分"},"answer":"B","source":"example/medical"}
+{"id":"medical_demo_002","question":"胰岛素主要用于调节什么？","choices":{"A":"血糖","B":"体温","C":"视力","D":"骨密度"},"answer":"A","source":"example/medical"}

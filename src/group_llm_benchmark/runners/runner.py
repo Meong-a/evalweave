@@ -16,12 +16,12 @@ from group_llm_benchmark.utils.io import (
     environment_snapshot,
     hash_file,
     hash_value,
-    read_jsonl,
     safe_name,
     utc_now,
     write_csv,
     write_json,
 )
+from group_llm_benchmark.utils.jsonl_v1_2 import read_jsonl
 
 
 def _mean(values: Iterable[float]) -> float:

@@ -1,0 +1,9 @@
+{
+  "type": "custom",
+  "class_path": "group_llm_benchmark.extensions.keyword_coverage_v1_2_2:KeywordCoverageTask",
+  "name": "my_keyword_task_v1",
+  "dataset_path": "../../examples/domain_tasks/keyword_custom_v1_2_2.jsonl",
+  "capabilities": ["domain_generation"],
+  "primary_metric": "keyword_recall",
+  "prompt_template": "{text}"
+}

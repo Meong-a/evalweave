@@ -4,16 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "evalweave"
-version = "1.0.0"
-description = "Model- and domain-agnostic benchmark framework for reproducible LLM evaluation"
+version = "1.2.2"
+description = "Reproducible full-suite LLM benchmark framework for group evaluation"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
-keywords = ["llm", "benchmark", "evaluation", "transformers", "peft"]
 
 [project.optional-dependencies]
 hf = ["torch", "transformers", "peft"]
 yaml = ["PyYAML"]
+ifeval = ["absl-py", "langdetect", "nltk", "immutabledict"]
 
 [project.scripts]
 evalweave = "group_llm_benchmark.cli:main"
@@ -24,4 +24,3 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

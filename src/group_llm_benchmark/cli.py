@@ -10,17 +10,19 @@ from group_llm_benchmark.config import load_experiment
 from group_llm_benchmark.importers import import_legacy_mcq
 from group_llm_benchmark.runners import BenchmarkRunner
 from group_llm_benchmark.suites import run_suite
+from group_llm_benchmark.tasks import create_task
+from group_llm_benchmark.utils.io import read_config
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
-        prog="evalweave",
-        description="Model- and domain-agnostic, reproducible LLM benchmark",
-    )
+    parser = argparse.ArgumentParser(prog="gbench", description="Group-wide reusable LLM benchmark")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     validate = subparsers.add_parser("validate-config", help="Validate and resolve an experiment config")
     validate.add_argument("--config", required=True, type=Path)
+
+    validate_task = subparsers.add_parser("validate-task", help="Load every row in a task config without running a model")
+    validate_task.add_argument("--config", required=True, type=Path)
 
     run = subparsers.add_parser("run", help="Run one model on one task")
     run.add_argument("--config", required=True, type=Path)
@@ -58,6 +60,22 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "validate-config":
             config = load_experiment(args.config)
             print(json.dumps(config.to_dict(), ensure_ascii=False, indent=2))
+        elif args.command == "validate-task":
+            task_path = args.config.resolve()
+            task_config = read_config(task_path)
+            task_config.pop("_config_path", None)
+            task = create_task(task_config, base_dir=task_path.parent)
+            samples = task.load_samples()
+            if not samples:
+                raise ValueError("task contains no samples")
+            first_request = task.build_request(samples[0])
+            print(json.dumps({
+                "status": "PASS",
+                "task_name": samples[0].task_name,
+                "sample_count": len(samples),
+                "first_sample_id": samples[0].sample_id,
+                "first_prompt_preview": first_request.prompt[:200],
+            }, ensure_ascii=False, indent=2))
         elif args.command == "run":
             config = load_experiment(args.config)
             result = BenchmarkRunner(config, run_dir=args.run_dir).run()

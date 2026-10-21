@@ -1,0 +1,16 @@
+{
+  "suite_version": "1.2.2",
+  "normalized_records_total": 37315,
+  "scored_evaluation_total": 24713,
+  "datasets": {
+    "mmlu_test": {"count": 14042, "sha256": "becb581bfe4abcfefbca33d351e5d4f972c3bdd90dcd74f1df0521067de7d2f8"},
+    "ceval_dev": {"count": 260, "sha256": "2d5f63d4d8199b945a7a3a05c179063fb7978c85f87eaecdb52e1137da273883"},
+    "ceval_val": {"count": 1346, "sha256": "ea4c1b8c5c5e5b9bd8326d661c1e4dc3ece74a6a643662d86f769bda178a1d7e"},
+    "ceval_test": {"count": 12342, "sha256": "7a54aa1e1a556870865e15be3d4bcb66e409ac5f79a03e82e649c2c1a7742677"},
+    "bbh": {"count": 6511, "sha256": "2b20c71a9c6ba1998fb193d2bb055993ab37011b36dcf35b4d83a1548b860051"},
+    "gsm8k_test": {"count": 1319, "sha256": "f0609e34c0d645caf258c1e7f30dcb8732103e3ee436136600a598c59d92973b"},
+    "truthfulqa": {"count": 790, "sha256": "76d1d56179a253a5c80f5be54bfacefd97f42520c224663a30f924c09573ecd6"},
+    "ifeval": {"count": 541, "sha256": "304095f8913074b55a3be00e04fb06cfd54d39ef6da1b7709dd7625502961889"},
+    "humaneval": {"count": 164, "sha256": "b8755460c279324d22762776a0e7848f43b341fc5f7925a4b623c68f275b7cd5"}
+  }
+}

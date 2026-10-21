@@ -10,11 +10,11 @@ from group_llm_benchmark.tasks.common import load_records
 from group_llm_benchmark.utils.io import (
     environment_snapshot,
     hash_file,
-    read_jsonl,
     safe_name,
     write_csv,
     write_json,
 )
+from group_llm_benchmark.utils.jsonl_v1_2 import read_jsonl
 
 
 def import_legacy_mcq(

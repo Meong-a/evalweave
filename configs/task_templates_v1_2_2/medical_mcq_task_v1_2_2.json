@@ -1,0 +1,8 @@
+{
+  "type": "mcq_formal",
+  "name": "my_medical_mcq_v1",
+  "dataset_path": "../../examples/domain_tasks/medical_mcq_v1_2_2.jsonl",
+  "capabilities": ["medical_knowledge"],
+  "primary_metric": "accuracy",
+  "prompt_template": "问题：{question}\n选项：\n{choices}\n只回答选项字母："
+}

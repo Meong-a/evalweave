@@ -15,6 +15,10 @@ def _resolve_component(value: Any, base_dir: Path, name: str) -> dict[str, Any]:
         if not path.is_absolute():
             path = (base_dir / path).resolve()
         component = read_config(path)
+        if name == "task" and "dataset_path" in component:
+            dataset_path = Path(str(component["dataset_path"]))
+            if not dataset_path.is_absolute():
+                component["dataset_path"] = str((path.parent / dataset_path).resolve())
         component.pop("_config_path", None)
         return component
     raise ValueError(f"{name} must be an object or a config path string")
