@@ -18,7 +18,7 @@ EvalWeave 的核心不包含任何特定模型、成员或领域逻辑。医学�
 要求 Python 3.10+。克隆项目后执行：
 
 ```bash
-git clone https://github.com/<your-account>/evalweave.git
+git clone https://github.com/Meong-a/evalweave.git
 cd evalweave
 export PYTHONPATH="$PWD/src"
 
@@ -160,4 +160,3 @@ evalweave compare \
 - `report_v1.html` 用于阅读，`predictions_v1.jsonl` 与 `metrics_v1.json` 是审计依据。
 
 更详细说明见 `docs/architecture_v1.md`、`docs/model_adapter_guide_v1.md`、`docs/task_plugin_guide_v1.md` 和 `docs/reproducibility_v1.md`。
-
