@@ -1,0 +1,3 @@
+group_llm_benchmark=1.0.0
+schema_version=1.0
+release_date=2026-10-21

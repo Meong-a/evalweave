@@ -1,0 +1,13 @@
+{
+  "type": "mcq",
+  "name": "public_demo_mcq_v1",
+  "dataset_path": "../../data/examples_v1/public_demo_mcq_v1.jsonl",
+  "id_field": "id",
+  "question_field": "question",
+  "choices_field": "choices",
+  "answer_field": "answer",
+  "source_field": "source",
+  "capabilities": ["general_knowledge", "instruction_following"],
+  "primary_metric": "accuracy",
+  "prompt_template": "Select the single correct answer. Reply with only the option letter.\nQuestion: {question}\nOptions:\n{choices}\nAnswer:"
+}

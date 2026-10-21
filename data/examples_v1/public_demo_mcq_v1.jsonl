@@ -1,0 +1,4 @@
+{"id":"public_demo_001","question":"What is 2 + 2?","choices":{"A":"3","B":"4","C":"5","D":"6"},"answer":"B","source":"public-domain-smoke"}
+{"id":"public_demo_002","question":"What is the capital of France?","choices":{"A":"Paris","B":"Rome","C":"Berlin","D":"Madrid"},"answer":"A","source":"public-domain-smoke"}
+{"id":"public_demo_003","question":"Which formula represents water?","choices":{"A":"CO2","B":"O2","C":"H2O","D":"NaCl"},"answer":"C","source":"public-domain-smoke"}
+{"id":"public_demo_004","question":"The Sun is best classified as which object?","choices":{"A":"Planet","B":"Asteroid","C":"Moon","D":"Star"},"answer":"D","source":"public-domain-smoke"}

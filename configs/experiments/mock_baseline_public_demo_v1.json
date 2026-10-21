@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "experiment_name": "mock_baseline_public_demo_v1",
+  "model_ref": "../models/mock_baseline_v1.json",
+  "task_ref": "../tasks/public_demo_mcq_v1.json",
+  "generation": {"do_sample": false, "max_new_tokens": 8},
+  "batch_size": 2,
+  "seed": 42,
+  "resume": true,
+  "output_root": "../../runs",
+  "metadata": {"purpose": "CPU-only reproducible baseline smoke test"}
+}
